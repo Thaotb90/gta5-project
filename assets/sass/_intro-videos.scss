@@ -1,0 +1,112 @@
+.intro-videos{
+    background-image: url(../images/bg-section/landing-rev-slider-img-2.jpg);
+    position: relative;
+    z-index: 1;
+    .video-right{
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 21px 0 rgb(1 1 1 / 50%);
+        .bg-video{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 11;
+        }
+        .bg-video.hidden-bg{
+            z-index: -1;
+        }
+        .content-videos{
+            .video-earth{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 10;
+                video{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .buttonbar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 12;
+
+            #play{
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                .pp-wrapper{
+                    i{
+                        line-height: 80px;
+                        width: 80px;
+                        height: 80px;
+                        color: white;
+                        background-color: $primary-color;
+                        text-align: center;
+                        font-size: 30px;
+                        border-radius: 10rem;
+                        border:none;
+                    }
+
+                }
+            }
+            .play-show{
+                cursor: pointer;
+                i.fa-pause{
+                    display: none;
+                }
+                i.fa-play{
+                    display: block;
+                }
+            }
+            .pause-show{
+                text-shadow: 0 0 5px black;
+                i.fa-pause{
+                    display: block;
+                    opacity: 0.1;
+                }
+                i.fa-play{
+                    display: none;
+                }
+            }
+        }
+    }
+    .section-heading{
+
+        .section-title{
+            font-size: 50px;
+        }
+        .boxed-img{
+            margin-bottom: 50px;
+        }
+        .btn{
+            margin-top: 40px;
+        }
+    }
+}
+.intro-videos .container-fluid{
+    position: relative;
+    z-index: 3;
+}
+.intro-videos:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}

@@ -1,0 +1,89 @@
+.intro{
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    .boxed-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img{
+            object-fit: cover;
+        }
+    }
+    .content-intro{
+        position: absolute;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        .caption{
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-weight: 800;
+        }
+        .title-primary{
+            font-size: 90px;
+            font-weight: 800;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .animation-title{
+            mix-blend-mode: multiply;
+            animation-name: glitch-anim-text;
+            animation-name: glitch-anim-text-overlay;
+            animation-delay: .3s;
+            animation-duration: 1.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .intro-desc{
+            line-height: 28px;
+        }
+        .btn--primary{
+            text-transform: uppercase;
+            color: black;
+            padding: 10px 30px;
+            transform: skewX(-15deg);
+            border: none;
+            border-radius: 0;
+            background-color: $primary-color;
+            transition: 0.3s;
+            position: relative;
+            margin: 0;
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            outline: none;
+
+        }
+        .btn--primary:after{
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: $primary-color;
+            right: -10px;
+            top: 0;
+            transition: 0.3s all;
+        }
+        .btn--primary:hover:after{
+            right: 0;
+        }
+    }
+}
+.intro:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}

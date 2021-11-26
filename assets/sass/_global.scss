@@ -1,0 +1,195 @@
+
+
+body {
+    font-family:'Oxanium', cursive;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+input, button, select, textarea {
+    outline: none;
+    box-sizing: border-box;
+}
+button, .btn:hover, .btn:focus, .btn:active {
+    cursor: pointer;
+    outline: none !important;
+    color: $primary-color;
+    box-shadow: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    color:$text-color;
+    font-weight: 600;
+    font-family: $primary-font;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+a {
+    color: $primary-color;
+    text-decoration: none !important;
+}
+a:hover, a:active, a:focus{
+    outline: none;
+    background-color: inherit;
+    box-shadow: none;
+}
+li{
+    list-style: none;
+}
+input, input:focus{
+outline: none;
+box-shadow: none;
+}
+.container {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+.row{
+    height: 100%;
+}
+.wrapper {
+    width: 100%;
+}
+section {
+    padding: 100px 0;
+}
+section{
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+.boxed-img{
+    display: inline-block;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*++++++++++++++ Header +++++++++++++++*/
+// .btn--primary{
+//     border: 0;
+//     border-radius: 10px;
+//     width: 220px;
+//     height: 60px;
+//     line-height: 59px;
+//     padding:0;
+//     z-index: 1;
+//     color: $primary-color;
+//     background-color: white;
+//     transition: all 0.3s ease-out;
+//     display: inline-block;
+//     position: relative;
+//     font-size:14px ;
+//     font-weight: 700;
+//     text-transform: uppercase;
+// }
+// .btn--primary:hover{
+//     background-color: $primary-color;
+//     color:white;
+// }
+.btn-outline-primary{
+    border: 2px solid;
+    border-color: $secondary-color;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
+    line-height: 59px;
+    padding:0;
+    z-index: 1;
+    color: white;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+.btn-outline-primary:hover{
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: white;
+}
+.heading-section{
+    position: relative;
+    margin: 35px 0;
+    .title-section{
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        line-height: 57px;
+        font-family: $primary-font;
+    }
+    .sub-title{
+        font-family: $primary-font;
+        position: absolute;
+        top: -50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 100px;
+        font-weight: 700;
+        color: white;
+        opacity: 0.02;
+        line-height: 125px;
+        text-transform: uppercase;
+    }
+    
+}
+.slick-slider .boxed-img img.control-c{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.container-fluid{
+    width: 100%;
+    max-width: 1400px;
+}
+.wrapper-section{
+    max-width: 1660px;
+    margin: 0 auto;
+}
+.color-primary{
+    color: $primary-color;
+}
+.section-heading{
+    margin-bottom: 75px;
+    .section-title{
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        font-family: 'Marcellus SC', serif;
+    }
+    .boxed-img {
+        margin-bottom: 30px;
+    }
+    .section-line{
+        
+    }
+    .section-desc{
+        font-size: 16px;
+        color: white;
+    }
+}
+.gradient-text-custom {
+    text-shadow: none!important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    filter: drop-shadow(0 0 5px $primary-color );
+}
+.gradient-text-custom {
+    background-image: -webkit-linear-gradient(
+110.78deg, rgb(118, 230, 80) -1.13%, rgb(249, 214, 73) 15.22%, rgb(240, 142, 53) 32.09%, rgb(236, 81, 87) 48.96%, rgb(255, 24, 189) 67.94%, rgb(26, 75, 255) 85.34%) !important;
+    background-image: linear-gradient(
+110.78deg, rgb(118, 230, 80) -1.13%, rgb(249, 214, 73) 15.22%, rgb(240, 142, 53) 32.09%, rgb(236, 81, 87) 48.96%, rgb(255, 24, 189) 67.94%, rgb(26, 75, 255) 85.34%) !important;
+}
