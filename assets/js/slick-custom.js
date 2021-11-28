@@ -1,13 +1,13 @@
 /*=============================================
     =      Released Game Active 	      =
 =============================================*/
-$('.team-active').slick({
+$('.character-active').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	arrows: false,
 	fade: true,
 	dots: true,
-	asNavFor: '.team-nav',
+	asNavFor: '.character-nav',
 	responsive: [
 		{
 			breakpoint: 767,
@@ -18,11 +18,11 @@ $('.team-active').slick({
 		},
 	]
 });
-$('.team-nav').slick({
+$('.character-nav').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
     infinite: true,
-	asNavFor: '.team-active',
+	asNavFor: '.character-active',
 	dots: false,
 	arrows: false,
 	centerMode: true,

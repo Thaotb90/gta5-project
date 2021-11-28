@@ -88,27 +88,33 @@ img {
 }
 
 /*++++++++++++++ Header +++++++++++++++*/
-// .btn--primary{
-//     border: 0;
-//     border-radius: 10px;
-//     width: 220px;
-//     height: 60px;
-//     line-height: 59px;
-//     padding:0;
-//     z-index: 1;
-//     color: $primary-color;
-//     background-color: white;
-//     transition: all 0.3s ease-out;
-//     display: inline-block;
-//     position: relative;
-//     font-size:14px ;
-//     font-weight: 700;
-//     text-transform: uppercase;
-// }
-// .btn--primary:hover{
-//     background-color: $primary-color;
-//     color:white;
-// }
+.btn--primary {
+  text-transform: uppercase;
+  color: black;
+  padding: 10px 30px;
+  transform: skewX(-15deg);
+  border: none;
+  border-radius: 0;
+  background-color: #e4a101;
+  transition: 0.3s;
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  outline: none;
+}
+.btn--primary:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #e4a101;
+  right: -10px;
+  top: 0px;
+  transition: 0.3s all;
+}
 .btn-outline-primary {
   border: 2px solid;
   border-color: red;
@@ -138,6 +144,7 @@ img {
 .container-fluid {
   width: 100%;
   max-width: 1400px;
+  padding: 0 15px;
 }
 .wrapper-section {
   max-width: 1660px;
