@@ -78,7 +78,7 @@
   opacity: 1;
 }
 .memb-item:hover {
-  background-color: #752b1a;
+  background-color: transparent;
   box-shadow: 0 0 60px rgba(97, 51, 40, 0.9);
 }
 
@@ -106,7 +106,7 @@
 .box-img-team:after {
   content: "";
   position: absolute;
-  background-color: #ff0000;
+  background-color: $primary-color;
   transition: transform 0.3s;
   top: 0;
   width: 4px;
@@ -131,7 +131,7 @@
 .box-border-animate::after {
   content: "";
   position: absolute;
-  background-color: #f60b0e;
+  background-color: $primary-color;
   transition: transform 0.3s;
   left: 0;
   width: 100%;
