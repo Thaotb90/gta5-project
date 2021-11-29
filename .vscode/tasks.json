@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "run start edit",
             "type": "shell",
-            "command": "echo Hello"
+            "command": "sass ./assets/sass/main.scss:./assets/css/main.css --watch"
         }
     ]
 }

@@ -6,6 +6,12 @@
     position: relative;
     z-index: 3;
   }
+  .title-token{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
   .title-token-metric {
     font-size: 30px;
     color: white;
@@ -18,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 30px;
   }
   table.table-metric {
     border-spacing: 3px;
@@ -67,25 +73,29 @@
   }
   // token intruction
   .token-intruction {
-    margin-top: -7px;
   }
   .intruction-item {
     display: flex;
     flex-direction: row;
     justify-self: center;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
+    position: relative;
+    top: 3px;
   }
   .intruction-item h5 {
     color: white;
     padding: 15px 0px;
-    border-radius: 10px;
-    background: $primary-color;
+    border-radius: 0;
+    background: #e4a1018c;
     width: 145px;
     overflow: hidden;
     text-align: center;
     font-size: 16px;
-    border: none;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient( 
+180deg, #faea75, #c07205);
     margin-bottom: 20px;
   }
   .intruction-item span {
@@ -104,4 +114,26 @@
   background-color: rgba(0, 0, 0, 0.712);
   position: absolute;
   z-index: 2;
+}
+
+@media screen and (max-width: 991px) {
+  .token{
+    .col-lg-6:first-child {
+      margin-bottom: 50px;
+    }
+  }
+
+}
+@media screen and (max-width: 769px) {
+  .token .token-info-content {
+    flex-direction: column;
+    column-gap: 30px;
+    .table-metric {
+      margin-bottom: 40px;
+    }
+    .token-intruction {
+      margin: auto;
+  }
+}
+
 }

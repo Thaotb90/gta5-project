@@ -1,6 +1,7 @@
 .teams {
   background-image: url(../images/bg-section/bg-section-features.jpg);
   position: relative;
+  padding-bottom: 160px;
   .team-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -63,6 +64,8 @@
     align-items: center;
     position: relative;
     z-index: 99;
+    background: rgb(39, 33, 12);
+    transition: 1s ease;
     .name {
       font-size: 20px;
       font-weight: 700;
@@ -106,7 +109,8 @@
 .box-img-team:after {
   content: "";
   position: absolute;
-  background-color: $primary-color;
+  background-image: linear-gradient( 
+    180deg, #faea75, #c07205);
   transition: transform 0.3s;
   top: 0;
   width: 4px;
@@ -131,7 +135,8 @@
 .box-border-animate::after {
   content: "";
   position: absolute;
-  background-color: $primary-color;
+  background-image: linear-gradient( 
+    180deg, #faea75, #c07205);
   transition: transform 0.3s;
   left: 0;
   width: 100%;
@@ -159,4 +164,30 @@
 .memb-item:hover .box-border-animate::before,
 .memb-item:hover .box-border-animate::after {
   transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 1023px) {
+  .teams .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media screen and (max-width: 991px) {
+  .character-nav {
+    display: none;
+  }
+  .roadmap .roadmap-item {
+    position: relative;
+  }
+  .roadmap .roadmap-img {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  .roadmap .roadmap-content {
+    order: 2;
+  }
+}
+@media screen and (max-width: 769px) {
+  .teams .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
 }

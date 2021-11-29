@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'pricedown';
+  src: url(../fonts/pricedown-bl.otf);
+}
 body {
   font-family: "Oxanium", cursive;
   color: $text-color;
@@ -21,7 +25,7 @@ button,
   cursor: pointer;
   outline: none !important;
   color: $primary-color;
-  box-shadow: none;
+  box-shadow: none !important; 
 }
 h1,
 h2,
@@ -129,11 +133,46 @@ img {
   display: inline-block;
   position: relative;
   text-transform: uppercase;
+  overflow: hidden;
+}
+.btn-outline-primary:before{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 60px;
+  height: 2px;
+  -webkit-transform: rotate(
+45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(
+45deg);
+top: 0;
+right: -14px;
+transition: 0.3s all;
+}
+.btn-outline-primary:after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 60px;
+  height: 2px;
+  -webkit-transform: rotate(
+45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(
+45deg);
+bottom: 0;
+left: -14px;
+transition: 0.3s all;
 }
 .btn-outline-primary:hover {
   background-color: $primary-color;
   border-color: $primary-color;
   color: white;
+  box-shadow: rgba(225, 225, 225, 0.9) 0px 0px 10px;
+}
+.btn-outline-primary:hover:after, .btn-outline-primary:hover:before{
+background-color: transparent;
 }
 .slick-slider .boxed-img img.control-c {
   width: 35px;
@@ -157,10 +196,12 @@ img {
 .section-heading {
   margin-bottom: 75px;
   .section-title {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 75px;
+    font-weight: bold;
     margin-bottom: 20px;
-    font-family: "Marcellus SC", serif;
+    font-family:'pricedown';
+    text-transform: uppercase;
+    letter-spacing: 10px;
     text-transform: uppercase;
   }
   .boxed-img {
@@ -199,4 +240,17 @@ img {
     rgb(255, 24, 189) 67.94%,
     rgb(26, 75, 255) 85.34%
   ) !important;
+}
+@media screen and (max-width: 769px) {
+
+  section {
+    padding: 60px 0;
+}
+
+}
+@media screen and (max-width: 520px) {
+  .section-heading .section-title {
+    font-size: 55px;
+}
+
 }

@@ -1,0 +1,160 @@
+footer.footer{
+    padding: 200px 0 70px 0;
+    background-image: url(../images/bg-section/dark_leather.png);
+    position: relative;
+    .block-large-footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        position: absolute;
+        width: 70%;
+        height: auto;
+        background-color: gray;
+        border-radius: 20px; 
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        .footer-brand{
+            .boxed-img{
+                img{
+                    max-width: 165px;
+                }
+            }
+        }
+        .footer-slogan{
+            font-size: 30px;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1;
+            font-family: $primary-font;
+        }
+        
+        .info-company{
+            text-align: left;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .block-footer-info{
+            width: 100%;
+        }    
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+
+    }
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title-list-footer{
+            font-size: 30px;
+            color:white;
+            line-height: 33px;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        .title-list-footer:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height:2px;
+            background-image:linear-gradient(to right , rgb(192, 114, 5), rgb(250, 234, 117));
+            bottom: 0;
+            left: 0;
+        }
+        ul{
+            width: auto;
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 15px;
+            text-align: left;
+            li{
+                line-height: 40px;
+                position: relative;
+                a{
+                    color:#cd5a5a;
+                    transition: 0.3s all;
+                    display: inline-block;
+                    span{
+                        font-size: 22px;
+                        font-weight: 300;
+                        color: inherit;
+                        text-transform: capitalize;
+                    }
+                }
+                a:after{
+                    margin-left: 10px;
+                    
+                }
+                a:hover{
+                    text-shadow: none !important;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-box-decoration-break: clone;
+                    filter: drop-shadow(0 0 5px $primary-color);
+                    background-image: linear-gradient( rgb(192, 114, 5), rgb(250, 234, 117));
+                    transform: translateX(4px);
+                }
+
+            }
+            .group-telegram:hover .menu-tele-group.dropdown-menu{
+                display: block;
+            }
+        }
+        .menu-socials{
+            i{
+                margin-right: 10px;
+                color: gainsboro;
+            }
+        }
+        .menu-tele-group.dropdown-menu{
+            transition: 0.3s all;
+            background: #000;
+            left: 100%;
+            top: -230%;
+            transition: 0.3s all;
+            .menu-tele{
+                .menu-item{
+                    line-height: 27px;
+                    a{
+                        line-height: 0;
+                        img{
+                            max-width: 30px;
+                            margin-right: 20px;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-size: 12px;
+                            color: white;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    footer.footer .block-large-footer {
+        padding: 15px;
+    }
+footer.footer .block-footer-info {
+    .footer-slogan {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .info-company {
+        p{
+            font-size: 14px;
+        }
+    }
+}
+}

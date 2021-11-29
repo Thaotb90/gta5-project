@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   z-index: 100;
+  box-shadow: 3.5px 6.1px 30px rgb(0 0 0 / 57%);
   &-main {
     background: #000;
     &-inner {
@@ -11,12 +12,15 @@
       justify-content: space-between;
       align-items: center;
       .navbar-header {
-        display: inline-block;
+        display: block;
+        position: relative;
+        z-index: 1;
         .navbar-brand {
           img {
             width: auto;
             height: 100px;
             object-fit: contain;
+            transition: 0.3s all;
           }
         }
       }
@@ -36,6 +40,7 @@
             z-index: 1;
             font-size: 16px;
             font-weight: 700;
+            text-transform: capitalize;
           }
           .nav-link:after {
             margin-left: 10px;
@@ -75,4 +80,93 @@
     height: 100%;
     width: 100%;
   }
+  .container-fluid{
+    padding: 0;
+  }
+}
+nav{
+  transition: 0.3s all;
+}
+.header nav.change-height{
+height: 65px;
+transition: 0.4s all;
+padding: 0 15px;
+}
+.header nav.change-height .navbar-header{
+top: 15px;
+}
+.header nav.change-height .navbar-brand img{
+width: 75px;
+}
+.header nav.change-height .nav-right .btn-outline-primary {
+
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+//responsive header
+nav.fixed-top {
+  background: black;
+  box-shadow: 3.5px 6.1px 30px rgba(0 ,0 ,0 ,0.75);
+}
+.header nav.change-height {
+  background: #bc690d;
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+  .header-main-inner .navbar-nav .nav-item .nav-link {
+    padding: 6px 15px;
+}
+
+}
+
+@media screen and (max-width: 1023px) {
+
+
+}
+@media screen and (max-width: 992px) {
+  .header-main-inner{
+    display: block;
+    text-align: center;
+    background: transparent;
+    padding: 10px 0px;
+  }
+.nav-right{
+  display: none;
+}
+  .header nav button.navbar-toggler {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: 999;
+    border: none;
+}
+.navbar-toggler {
+  border-color: rgb(255,102,203);
+
+} 
+div#navbarSupportedContent.show {
+  background-image: url(../images/bg-section/landing-rev-slider-img-2.jpg);
+  padding: 50px 0;
+  position: relative;
+  top: -30px;
+  width: 100%;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../images/menu-outline.svg);
+}
+.header nav.change-height .navbar-header {
+  top: 0;
+}
+.header-main-inner .navbar-header .navbar-brand img {
+  height: 70px;
+}
+.header-main-inner {
+  padding: 0;
+}
 }
