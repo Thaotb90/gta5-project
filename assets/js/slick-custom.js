@@ -74,6 +74,7 @@ $('.character-nav').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: false,
+				dots:false,
 				vertical: false,
 			}
 		},
