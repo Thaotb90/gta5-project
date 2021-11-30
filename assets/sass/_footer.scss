@@ -79,6 +79,7 @@ footer.footer{
             li{
                 line-height: 40px;
                 position: relative;
+                
                 a{
                     color:#cd5a5a;
                     transition: 0.3s all;
@@ -90,6 +91,9 @@ footer.footer{
                         text-transform: capitalize;
                     }
                 }
+                a.tele-hover{
+                    pointer-events: none;
+                  }
                 a:after{
                     margin-left: 10px;
                     
@@ -141,6 +145,17 @@ footer.footer{
             }
         }
     }
+}
+.scroll-up {
+    position: fixed;
+    right: 0px;
+    bottom: 60px;
+    z-index: 999;
+}
+.scroll-up a.page-scroll {
+    padding: 10px 20px;
+    background: #ff0000;
+    color:white;
 }
 @media screen and (max-width: 1025px) {
     footer.footer .block-large-footer {

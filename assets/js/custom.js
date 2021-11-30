@@ -57,13 +57,26 @@ $(document).ready(function(){
     $('#navbarSupportedContent .nav-link').click(function(){
         $('#navbarSupportedContent').removeClass('show');
     })
-})
+});
 
 
-// $('a.page-scroll').bind('click', function(event) {
-//     var $anchor = $(this);
-//     $('html, body').stop().animate({
-//         scrollTop: $($anchor.attr('href')).offset().top
-//     }, 1000, 'easeInOutExpo');
-//     event.preventDefault();
-// });
+// Scroll to top animated button
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.scroll-up').fadeIn();
+    } else {
+        $('.scroll-up').fadeOut();
+    }
+});
+
+         // Back to top smooth scroll
+
+         $('button.navbar-toggler').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1000, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    

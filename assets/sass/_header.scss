@@ -1,11 +1,11 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
   box-shadow: 3.5px 6.1px 30px rgb(0 0 0 / 57%);
   &-main {
     background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     &-inner {
       padding: 0 15px;
       width: 100%;
@@ -13,6 +13,7 @@
       justify-content: space-between;
       align-items: center;
       .navbar-header {
+        
         display: block;
         position: relative;
         z-index: 1;
@@ -101,7 +102,9 @@ padding: 0;
     line-height: 50px;
 
 }
-
+span.navbar-toggler-icon {
+  filter: invert(1);
+}
 //responsive header
 nav.fixed-top {
   background: #000000;
