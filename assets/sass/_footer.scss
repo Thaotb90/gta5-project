@@ -156,8 +156,12 @@ footer.footer{
 }
 .scroll-up a.page-scroll {
     padding: 10px 20px;
-    background: #ff0000;
+    background: #000;
     color:white;
+    transition: 0.3s ease;
+}
+.scroll-up a.page-scroll:hover {
+    box-shadow: 0 0 5px #ffffff94;
 }
 @media screen and (max-width: 1025px) {
     footer.footer .block-large-footer {
