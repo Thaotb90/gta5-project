@@ -86,3 +86,16 @@
     grid-gap: 24px;
 }
 }
+@media screen and (max-width: 520px) {
+
+  .features .grid-box {
+    grid-template-columns:  1fr;
+    grid-gap: 24px;
+}
+}
+@media screen and (max-width: 375px) {
+
+  .features .grid-box .feature-item .content-text {
+    margin: 10px;
+}
+}

@@ -40,8 +40,30 @@ $(window).scroll(function() {
 $(window).on('scroll', function () {
 	var scroll = $(window).scrollTop();
 	if (scroll < 245) {
-		$("nav.fixed-top").removeClass("change-height");
+		$("nav.fixed-top").removeClass("change-height", 1000);
 	} else {
-		$("nav.fixed-top").addClass("change-height");
+		$("nav.fixed-top").addClass("change-height", 1000);
 	}
 });
+
+$(document).ready(function(){
+    $('.header .navbar-nav .nav-link').click(function(){
+        $('.header .navbar-nav .nav-link').removeClass('active');
+        $(this).addClass('active');
+    })
+})
+
+$(document).ready(function(){
+    $('#navbarSupportedContent .nav-link').click(function(){
+        $('#navbarSupportedContent').removeClass('show');
+    })
+})
+
+
+// $('a.page-scroll').bind('click', function(event) {
+//     var $anchor = $(this);
+//     $('html, body').stop().animate({
+//         scrollTop: $($anchor.attr('href')).offset().top
+//     }, 1000, 'easeInOutExpo');
+//     event.preventDefault();
+// });

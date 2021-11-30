@@ -82,6 +82,7 @@
     gap: 25px;
     position: relative;
     top: 3px;
+    margin-bottom: 20px;
   }
   .intruction-item h5 {
     color: white;
@@ -96,7 +97,7 @@
     border-image-slice: 1;
     border-image-source: linear-gradient( 
 180deg, #faea75, #c07205);
-    margin-bottom: 20px;
+
   }
   .intruction-item span {
     font-size: 20px;
@@ -134,6 +135,51 @@
     .token-intruction {
       margin: auto;
   }
+  
 }
 
 }
+@media screen and (max-width: 580px) {
+  .token table.table-metric thead th {
+    padding: 5px;
+    font-size: 16px;
+}
+.token .token-info-content tbody tr td {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.token .token-info-content tfoot tr th {
+  padding: 15px 0;
+  color: white;
+  font-size: 14px;
+}
+.token .intruction-item span {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 374px) {
+  .token table.table-metric thead th {
+    font-size: 12px;
+}
+}
+@media screen and (max-width: 320px) {
+  .token .token-info-content tbody tr td {
+    padding: 0px;
+    font-size: 10px;
+    font-weight: 300;
+}
+.token .token-info-content tfoot tr th {
+  padding: 15px 0;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.token .intruction-item h5 {
+  padding: 12px 0px;
+  width: 120px;
+  font-size: 14px;
+  font-weight: 300;
+}
+}
+

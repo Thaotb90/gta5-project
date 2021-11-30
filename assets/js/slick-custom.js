@@ -8,13 +8,25 @@ $('.character-active').slick({
 	fade: true,
 	dots: true,
 	asNavFor: '.character-nav',
+	prevArrow:"<div class=\"boxed-img\"><img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'></div>",
+	nextArrow:"<div class=\"boxed-img\"><img class='a-right control-c next slick-next' src='./assets/images/character/chevron-forward-outline.svg'></div>",
 	responsive: [
 		{
 			breakpoint: 767,
 			settings: {
 				arrows: false,
+				dots: true,
+			},
+			breakpoint: 581,
+			settings: {
+				arrows: true,
 				dots: false,
-			}
+			},
+			breakpoint: 375,
+			settings: {
+				arrows: true,
+				dots: false,
+			},
 		},
 	]
 });

@@ -160,3 +160,22 @@ img.animated-circle {
     -webkit-transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 374px) {
+ 
+  .roadmap .roadmap-content .wrap-outer .wrap-inner .story-chap .content-chap {
+    margin-bottom: 0;
+}
+.roadmap .roadmap-content .wrap-outer .wrap-inner .story-chap .content-chap .content-heading .title {
+  font-size: 20px;
+}
+.roadmap .roadmap-content .wrap-outer .wrap-inner .story-chap .content-chap .content {
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 320px) {
+ 
+  .direction {
+    margin: 35px 0;
+}
+}
