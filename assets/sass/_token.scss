@@ -1,5 +1,9 @@
 .token {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat;
+  background-position: top;
+  background-size: contain;
+  
   position: relative;
   z-index: 1;
   padding: 0;

@@ -504,7 +504,7 @@ span.navbar-toggler-icon {
 }
 
 nav.fixed-top {
-  background: #2c2c2c;
+  background: #000;
   box-shadow: 3.5px 6.1px 30px rgba(0, 0, 0, 0.75);
 }
 
@@ -601,34 +601,30 @@ header .nav-right .lang-flag ul.dropdown-flag {
   transition: 0.4s ease-in-out;
 }
 
-.vodiapicker {
-  display: none;
+.header .nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
-
-#a {
-  padding-left: 0px;
+.header .nav-right .switch-lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
-
-#a img, .btn-select img {
-  width: 12px;
+.header .nav-right .switch-lang .boxed-img img {
+  max-width: 80px;
+  height: auto;
+  object-fit: contain;
 }
-
-#a li {
-  list-style: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-#a li:hover {
-  background-color: #F4F3F3;
-}
-
-#a li img {
-  margin: 5px;
-}
-
-#a li span, .btn-select li span {
-  margin-left: 30px;
+.header .nav-right .switch-lang .group-lang {
+  color: #E5650E;
+  font-family: "Marcellus SC", serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
 }
 
 /* item list */
@@ -1254,6 +1250,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   justify-content: space-between;
   align-items: center;
 }
+.roadmap .content-rm .flex-row-one .flex-item .boxed-img {
+  max-width: 200px;
+}
 .roadmap .content-rm .flex-row-two {
   display: flex;
   justify-content: space-around;
@@ -1276,10 +1275,19 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  z-index: 0;
+}
+
+.roadmap .container-fluid {
+  position: relative;
+  z-index: 1;
 }
 
 .token {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+  background-repeat: repeat;
+  background-position: top;
+  background-size: contain;
   position: relative;
   z-index: 1;
   padding: 0;
@@ -1813,9 +1821,9 @@ ul.character-socials a:hover:after {
 }
 .teams {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: cener;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
   padding: 100px 0;
   padding-top: 200px;
 }
@@ -1952,6 +1960,44 @@ footer.footer .menu-socials i {
 
 .scroll-up a.page-scroll:hover {
   box-shadow: 0 0 5px #ffffff94;
+}
+
+.footer .glass-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer .glass-img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/bg-section/glass-left.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+.footer .glass-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/bg-section/glass-right.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 110;
 }
 
 @media screen and (max-width: 1025px) {

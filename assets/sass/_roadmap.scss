@@ -17,6 +17,7 @@
     align-items: center;
     .flex-item{
       .boxed-img{
+        max-width: 200px;
         img{
 
         }
@@ -46,4 +47,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position:bottom ;
+  z-index: 0;
+}
+.roadmap .container-fluid {
+  position: relative;
+  z-index: 1; 
 }

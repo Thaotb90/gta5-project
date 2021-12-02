@@ -108,7 +108,7 @@ span.navbar-toggler-icon {
 }
 //responsive header
 nav.fixed-top {
-  background: #2c2c2c;
+  background: #000;
   box-shadow: 3.5px 6.1px 30px rgba(0 ,0 ,0 ,0.75);
 }
 
@@ -206,37 +206,37 @@ li.nav-item{
   display: block;
   transition: 0.4s ease-in-out;
 }
-
-.vodiapicker{
-  display: none; 
+.header .nav-right{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .btn--playnow{
+    
+  }
+  .switch-lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    .boxed-img{
+      img{
+        max-width: 80px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    .group-lang{
+      color: #E5650E;
+      font-family: $primary-font;
+      font-size: 18px;
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+    }
+  }
 }
 
-#a{
-  padding-left: 0px;
-}
-
-#a img, .btn-select img{
-  width: 12px;
-  
-}
-
-#a li{
-  list-style: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-#a li:hover{
- background-color: #F4F3F3;
-}
-
-#a li img{
-  margin: 5px;
-}
-
-#a li span, .btn-select li span{
-  margin-left: 30px;
-}
 
 /* item list */
 
