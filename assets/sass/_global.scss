@@ -195,7 +195,7 @@ img {
     font-family:'AquireBold';
     text-transform: uppercase;
     display: inline-block;
-    line-height: 45px;
+    line-height: 42px;
 
   }
   .boxed-img {
@@ -370,7 +370,7 @@ img {
   background: white;
   top: -15px;
   left: -15px;
-  box-shadow: 0 70px 0 0 white;
+  box-shadow: 0 75px 0 0 white;
 }
 .bg-second-large:after{
   content: "";
@@ -380,7 +380,7 @@ img {
   background: white;
   top: -15px;
   right: -15px;
-  box-shadow: 0 70px 0 0 white;
+  box-shadow: 0 75px 0 0 white;
 }
 .text-orange{
   color: $primary-color;
