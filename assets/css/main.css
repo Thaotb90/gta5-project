@@ -1138,9 +1138,10 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
 .features {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: cener;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
 }
 .features .text-orange {
   color: #E5650E;
@@ -1215,9 +1216,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .economics {
   padding: 60px 0;
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: bottom;
+  background-size: cover;
 }
 .economics .grid-box {
   display: grid;
@@ -1237,8 +1238,11 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 .roadmap {
   background-image: url(../images/bg-section/osimi-bg-section-orange.jpg);
   position: relative;
+  background-position: bottom;
   z-index: 1;
   padding-bottom: 500px;
+  background-repeat: repeat;
+  background-size: cover;
 }
 .roadmap .section-heading {
   position: relative;
@@ -1285,9 +1289,9 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 
 .token {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-position: top;
-  background-size: contain;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
   position: relative;
   z-index: 1;
   padding: 0;
@@ -1441,8 +1445,8 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
 }
 .metric {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat: repeat;
-  background-size: contain;
+  background-repeat: repeat-y;
+  background-size: cover;
   background-position: cener;
   padding-bottom: 100px;
 }
