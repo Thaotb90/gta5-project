@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GTA5 Game</title>
+    <title>OSIMI City Game</title>
     <meta name="description" content="OSIMI CITY GAME"/>
-    <link rel="shortcut icon" href="./assets/favico.png">
+    <link rel="shortcut icon" href="./assets/favico.png?v=1">
     <!-- Google font Oxanium-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +48,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <a href="#" class="navbar-brand"
-                  ><img src="./assets/images/osimi-logo-ver1.png" alt="brand"
+                  ><img src="./assets/images/logo.png" alt="brand"
                 /></a>
               </div>
              
@@ -64,19 +64,15 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#features">Features</a
+                    <a class="nav-link page-scroll" href="#features">Feature</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#token">token</a
+                    <a class="nav-link page-scroll" href="#token">tokens</a
                     >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link page-scroll" href="#roadmap">Roadmap</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#character">Character</a
                     >
                   </li>
                   <li class="nav-item">
@@ -87,7 +83,19 @@
               </div>
       
               <div class="nav-right">
-                <a href="#!" class="btn btn-outline-primary">join us now</a>
+                <a href="#!" class="btn btn-outline-primary">Play now</a>
+                <!--languages-->
+                <select class="vodiapicker">
+                  <option value="en" class="test" data-thumbnail="../assets/images/flags/vn.jpg">Vi</option>
+                  <option value="au" data-thumbnail="../assets/images/flags/flag-en.jpg">En</option>
+            </select>
+            
+            <div class="lang-select">
+            <button class="btn-select" value=""></button>
+            <div class="b">
+            <ul id="a"></ul>
+            </div>
+            </div>
               </div>
             </div>
           </div>
@@ -99,28 +107,16 @@
       <!-- section intro -->
       <section id="about" class="intro">
         <div class="bg-overlay"></div>
-        <div class="video-intro">
+        <!-- <div class="video-intro">
           <video muted="" loop="" playsinline="" autoplay="" id="myVideo">
             <source
               src="./assets/videos/INTRO-GTA-V-FACHANNEL.mp4"
               type="video/mp4"
             />
           </video>
-        </div>
-        <div class="boxed-img">
-          <img src="./assets/images/4k-Mods-of-GTA-5.jpg" alt="" />
-        </div>
+        </div> -->
         <div class="content-intro">
-          <span class="caption">World Gaming</span>
-          <h1 class="title-primary">
-            cod <span class="color-primary">modern</span> warface
-          </h1>
-          <p class="intro-desc">
-            Find technology or people for digital projects in public sector and
-            Find an individual specialist develope researcher.
-          </p>
-          <a href="#!" class="btn btn--primary btn--wp">White paper</a>
-          <a href="#!" class="btn btn--primary btn--play">Play now</a>
+          <div class="boxed-img"><img src="./assets/images/bg-section/osimi-title.png" alt=""></div>
         </div>
       </section>
       <!-- End section intro -->
@@ -128,39 +124,34 @@
       <section class="intro-videos">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 text-center">
+            <div class="col-lg-7 text-center">
               <div class="section-heading">
                 <div class="section-cap"></div>
                 <h3 class="section-title animated bounceInDown">
-                  Wellcome to osimi city game
+                  <span class="text-border">Wellcome to </span>osimi city
                 </h3>
-                <div class="boxed-img">
+                <!-- <div class="boxed-img">
                   <img
                     src="./assets/images/line-heading-section.png"
                     alt=""
                     class="section-line"
                   />
-                </div>
+                </div> -->
                 <p class="section-desc">
-                  Drumstick meatloaf capicola short ribs, pork chop cupim
-                  kielbasa jerky porchetta pancetta chicken pastrami turkey
-                  tenderloin sausage. Pig buffalo alcatra meatball. T-bone
-                  hamburger bresaola kevin shank porchetta ground. Round beef
-                  tail tri-tip. Short loin pork strip steak venison.
-                </p>
-                <p class="section-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque magni provident ea nemo similique? Doloremque earum
-                  suscipit necessitatibus corrupti nesciunt.
-                </p>
-                <a href="#!" class="btn btn-outline-primary">contract now</a>
+                  OSIMI CITY IS A METAVERSE RPG GAME BUILT ON THE BSC BLOCKCHAIN WHERE PLAYERS
+BECOME DRAGON WARRIOR TO FIGHT AND DISCOVER A WHOLE NEW WORLD.</p>
+
+                  <p class="section-desc">IN THE WORLD OF DRAGONS, YOU CAN PARTICIPATE IN FIERCE BATTLES, DESTROY MONSTERS</p>
+                
+                
+                <a href="#!" class="btn btn-outline-primary">learn more</a>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-5">
               <div class="video-right">
                 <img
                   class="bg-video"
-                  src="./assets/images/bg-section/585x550.jpg"
+                  src="./assets/images/bg-section/bg-videos.png"
                   alt=""
                 />
                 <div class="content-videos">
@@ -184,28 +175,63 @@
         </div>
       </section>
       <!-- End section intro-videos -->
+      <!-- section character-class  -->
+      <section class="class-character">
+          <div class="character-list">
+            <div class="list-item">
+              <div class="boxed-img">
+                <img src="./assets/images/character/item-01.jpg" alt="">
+              </div>
+              <div class="boxed-content">
+                <h3 class="title-character">ASH - INCISIVE INSTIGATOR</h3>
+                <div class="desc-character">
+                  <p>ASH IS DONE JUST OVERSEEING THE GAMES:</p>
+                  <p>SHE'S READY TO WIN THEM AND</p>
+                  <p>PROVE SHE'S THE APEX PREDATOR.</p>
+                </div>
+                <button class="btn btn-second-small">Learn more</button>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="boxed-img">
+                <img src="./assets/images/character/item-02.jpg" alt="">
+              </div>
+              <div class="boxed-content">
+                <h3 class="title-character">ASH - INCISIVE INSTIGATOR</h3>
+                <div class="desc-character">
+                  <p>ASH IS DONE JUST OVERSEEING THE GAMES:</p>
+                  <p>SHE'S READY TO WIN THEM AND</p>
+                  <p>PROVE SHE'S THE APEX PREDATOR.</p>
+                </div>
+                <button class="btn btn-second-small">Learn more</button>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="boxed-img">
+                <img src="./assets/images/character/item-03.jpg" alt="">
+              </div>
+              <div class="boxed-content">
+                <h3 class="title-character">ASH - INCISIVE INSTIGATOR</h3>
+                <div class="desc-character">
+                  <p>ASH IS DONE JUST OVERSEEING THE GAMES:</p>
+                  <p>SHE'S READY TO WIN THEM AND</p>
+                  <p>PROVE SHE'S THE APEX PREDATOR.</p>
+                </div>
+                <button class="btn btn-second-small">Learn more</button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- End section character -->
       <!-- section features -->
       <section id="features" class="features">
-        <div class="wrapper-section">
+        <div class="container-fluid wrapper-section">
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="section-heading">
-                <h3 class="section-title animated bounceInRight">
-                  Game features
+                <h3 class="section-title bg-second-large animated bounceInRight">
+                  Game<span class="text-orange"> features</span>
                 </h3>
-                <div class="boxed-img">
-                  <img
-                    src="./assets/images/line/line-two.png"
-                    alt=""
-                    class="section-line"
-                  />
-                </div>
-                <p class="section-desc">
-                  Eldritch is a mesmerizing theme made specifically for gamers
-                  and businesses in<br />
-                  the video game industry. Packed with six fully customizable
-                  homepages.
-                </p>
               </div>
             </div>
           </div>
@@ -216,1056 +242,505 @@
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
                   <img
-                    src="./assets/images/games-like-watch-dogs-2.jpg"
+                    src="./assets/images/features/osimi-bg-video.png"
                     alt=""
                   />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">Multiplayer</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
             <div class="feature-item">
               <div class="content-item">
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
                   <img
-                    src="./assets/images/Grand-Theft-Auto-San-Andreas-está-grátis-por-tempo-limitado.jpg"
+                    src="./assets/images/features/osimi-bg-video.png"
                     alt=""
                   />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">Player vs. Environment</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
             <div class="feature-item">
               <div class="content-item">
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
                   <img
-                    src="./assets/images/GTA-San-Andreas-890x506.jpg"
+                    src="./assets/images/features/osimi-bg-video.png"
                     alt=""
                   />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">World Boss</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
             <div class="feature-item">
               <div class="content-item">
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
                   <img
-                    src="./assets/images/gta-v-lowrider-wallpaper-ps4-xbox-5-samoa-9WQK.jpg"
+                    src="./assets/images/features/osimi-bg-video.png"
                     alt=""
                   />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">NFT Marketplace</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
             <div class="feature-item">
               <div class="content-item">
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
-                  <img src="./assets/images/gta-vice.jpg" alt="" />
+                  <img
+                    src="./assets/images/features/osimi-bg-video.png"
+                    alt=""
+                  />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">Resource System</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
             <div class="feature-item">
               <div class="content-item">
                 <div class="bg-overlay"></div>
                 <div class="boxed-img">
-                  <img src="./assets/images/gtavonline.jpg" alt="" />
+                  <img
+                    src="./assets/images/features/osimi-bg-video.png"
+                    alt=""
+                  />
                 </div>
-                <div class="text-animated">Game showcase</div>
               </div>
-              <div class="content-text text-center">
-                <h4 class="title-item">Free Play To Earn</h4>
-                <p class="desc-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime officia delectus necessitatibus autem quae placeat voluptatem modi provident dolores dolorum.</p>
+              <div class="content-text">
+                <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                  STEAM SUMMER SALE</h4>
+                <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                  MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
               </div>
-            </div>
+            </div> <!-- End item-->
+           
           </div>
         </div>
       </section>
       <!-- End section feature -->
-      <section id="token" class="token">
-        <div class="container">
+      <!-- section token economics -->
+      <section class="economics">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="section-heading">
-                <div class="section-cap"></div>
-                <h3
-                  class="
-                    section-title
-                    animated
-                    bounceInDown
-                  "
-                >
-                  Token ALLOCATION
+                <h3 class="section-title bg-second-large animated bounceInRight">
+                  token<span class="text-orange"> economics</span>
                 </h3>
-                <div class="boxed-img">
-                  <img
-                    src="./assets/images/line-heading-section.png"
-                    alt=""
-                    class="section-line"
-                  />
-                </div>
-                <p class="section-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque magni provident ea nemo similique? Doloremque earum
-                  suscipit necessitatibus corrupti nesciunt.
-                </p>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 text-center">
-              <h4 class="title-token">Token distribution</h4>
-              <div class="boxed-img">
-                <img src="./assets/images/token/chart-01.png" alt="">
-              </div>
-            </div>
-            <div class="col-lg-6 text-center">
-              <h4 class="title-token">Fund distribution</h4>
-              <div class="boxed-img">
-                <img src="./assets/images/token/chart-01.png" alt="">
-              </div>
-            </div>
+            </div> <!--End heading-->
             <div class="col-lg-12">
-              <h3 class="title-token-metric">
-                        Token metric
-                    </h3>
-              <div class="token-info-content">
-                <div class="token-table">
-                  <table class="table-metric">
-                    <thead>
-                      <tr>
-                        <th>Stage</th>
-                        <th>Percentage</th>
-                        <th>Amount
-                          Token</th>
-                        <th>Vesting Period</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><b style="font-weight: bold;">Private Sale</b></td>
-                        <td>5%</td>
-                        <td>6,000,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td1-2">Full lock 12 months after TGE. Then unlock 2%/month</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;">Staking Reward</b></td>
-                        <td>30%</td>
-                        <td>36,000,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td2-2">Full lock 2 months after TGE, then vesting in 5 years</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;">Public Sale (IDO)</b></td>
-                        <td>0.5%</td>
-                        <td>600,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td3-2">30% unlock at TGE, Vesting in 2 months</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;">Team &amp; Founder</b></td>
-                        <td>18%</td>
-                        <td>21,600,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td4-2">Full lock 12 months after TGE. Then unlock 2%/month</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;">Liquidity</b></td>
-                        <td>5%</td>
-                        <td>6,000,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td5-2">5% unlock at TGE. Vesting 2 years</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;">Airdrop</b></td>
-                        <td>0.5%</td>
-                        <td>600,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td6-2">5% unlock after 2 week. Vesting 6 months</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;" data-tag="t-t-td7-1">Game Reward</b></td>
-                        <td>39%</td>
-                        <td>46,800,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td7-2">Lock 6 months after TGE. Then unlock 2%/month</td>
-                      </tr>
-                      <tr>
-                        <td><b style="font-weight: bold;"> Strategy Sale</b></td>
-                        <td>2%</td>
-                        <td>2,400,000</td>
-                        <td style="text-align: left;" data-tag="t-t-td1-2">Vesting in 1 year</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>Total</th>
-                        <th>100%</th>
-                        <th>120,000,000</th>
-                        <th></th>
-                      </tr>
-                    </tfoot>
-                  </table>
+              <div class="grid-box">
+                <div class="grid-item">
+                  <div class="boxed-img">
+                    <img src="./assets/images/features/osimi-bg-video.png" alt="">
+                  </div>
+                  <div class="grid-content">
+                      <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                        STEAM SUMMER SALE</h4>
+                      <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                        MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
+                  </div>
                 </div>
-                <div class="token-intruction">
-                  <div class="intruction-item field-name">
-                    <h5>Token Name</h5> <span>DragonSB</span> </div>
-                  <div class="intruction-item field-symbol">
-                    <h5>Symbol</h5> <span>SB</span> </div>
-                  <div class="intruction-item field-type">
-                    <h5>Type</h5> <span>BEP-20</span> </div>
-                  <div class="intruction-item field-total">
-                    <h5>Total Supply</h5> <span>120,000,000</span> </div>
-                                <div class="intruction-item field-new">
-                                    <h5>Initial Price</h5> <span>$0.1</span> </div>
-                  <div class="intruction-item field-public">
-                    <h5>IDO Price</h5> <span>$1</span> </div>
+                <div class="grid-item">
+                  <div class="boxed-img">
+                    <img src="./assets/images/features/osimi-bg-video.png" alt="">
+                  </div>
+                  <div class="grid-content">
+                      <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                        STEAM SUMMER SALE</h4>
+                      <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                        MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <div class="boxed-img">
+                    <img src="./assets/images/features/osimi-bg-video.png" alt="">
+                  </div>
+                  <div class="grid-content">
+                      <h4 class="title-item">SAVE ON MAFIA: TRILOGY GAMES DURING
+                        STEAM SUMMER SALE</h4>
+                      <p class="desc-item">SAVE ON MAFIA: TRILOGY AS WELL AS THE DEFINTIVE EDITIONS OF
+                        MAFIA, MAFIA II, AND MAFIA III DURING THE STEAM SUMMER SALE</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- section Roadmap -->
-      <section id="roadmap" class="roadmap">
-        <div class="container">
+      <!-- End section token economics -->
+      <!-- section allocation -->
+
+      <section id="token" class="token">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="section-heading">
                 <div class="section-cap"></div>
                 <h3
                   class="
+                  bg-second-large
                     section-title
                     animated
                     bounceInDown
                   "
                 >
-                  roadmap
+                  Token <span class="text-orange">ALLOCATION</span>
                 </h3>
-                <div class="boxed-img">
-                  <img
-                    src="./assets/images/line-heading-section.png"
-                    alt=""
-                    class="section-line"
-                  />
-                </div>
-                <p class="section-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque magni provident ea nemo similique? Doloremque earum
-                  suscipit necessitatibus corrupti nesciunt.
-                </p>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="roadmap-content">
-              <div class="wrap-outer">
-                <!--item - one-->
-                <div class="wrap-inner">
-                  <div class="story-chap">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6 roadmap-img">
-                          <div class="boxed-thumb">
-                            <img
-                              src="./assets/images/roadmap/story-1-570x252.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-6 roadmap-content">
-                          <div class="content-chap">
-                            <div class="content-heading">
-                              <span class="title">I buy game</span>
-                              <span class="date">16/7/2022</span>
-                            </div>
-                            <div class="content">
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Voluptatibus, velit vero commodi
-                              nemo provident porro unde voluptates labore
-                              repellendus itaque.
-                            </div>
-                          </div>
+            <div class="col-lg-6 text-center">
+              <div class="boxed-img">
+                <img src="./assets/images/token/chart-left.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="boxed-img">
+                <img src="./assets/images/token/chart-right.png" alt="">
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+            <!-- End section allocation -->
+            <!-- section metric -->
+            <section class="token metric">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                      <div class="section-cap"></div>
+                      <h3
+                        class=" bg-second-large
+                          section-title 
+                          animated
+                          bounceInDown
+                        "
+                      >
+                        Token <span class="text-orange">Metric</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="token-info-content">
+                        <div class="token-table">
+                          <table class="table-metric">
+                            <thead>
+                              <tr>
+                                <th>Stage</th>
+                                <th>Percentage</th>
+                                <th>Amount
+                                  Token</th>
+                                <th>Vesting Period</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><b style="font-weight: bold;">Private Sale</b></td>
+                                <td>5%</td>
+                                <td>6,000,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td1-2">Full lock 12 months after TGE. Then unlock 2%/month</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;">Staking Reward</b></td>
+                                <td>30%</td>
+                                <td>36,000,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td2-2">Full lock 2 months after TGE, then vesting in 5 years</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;">Public Sale (IDO)</b></td>
+                                <td>0.5%</td>
+                                <td>600,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td3-2">30% unlock at TGE, Vesting in 2 months</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;">Team &amp; Founder</b></td>
+                                <td>18%</td>
+                                <td>21,600,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td4-2">Full lock 12 months after TGE. Then unlock 2%/month</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;">Liquidity</b></td>
+                                <td>5%</td>
+                                <td>6,000,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td5-2">5% unlock at TGE. Vesting 2 years</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;">Airdrop</b></td>
+                                <td>0.5%</td>
+                                <td>600,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td6-2">5% unlock after 2 week. Vesting 6 months</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;" data-tag="t-t-td7-1">Game Reward</b></td>
+                                <td>39%</td>
+                                <td>46,800,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td7-2">Lock 6 months after TGE. Then unlock 2%/month</td>
+                              </tr>
+                              <tr>
+                                <td><b style="font-weight: bold;"> Strategy Sale</b></td>
+                                <td>2%</td>
+                                <td>2,400,000</td>
+                                <td style="text-align: left;" data-tag="t-t-td1-2">Vesting in 1 year</td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <tr>
+                                <th>Total</th>
+                                <th>100%</th>
+                                <th>120,000,000</th>
+                                <th></th>
+                              </tr>
+                            </tfoot>
+                          </table>
                         </div>
                       </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+            <!-- end section metric -->
+      <!-- section Roadmap -->
+      <section id="roadmap" class="roadmap">
+        <div class="bg-bottom-roadmap"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="section-heading">
+                <div class="section-cap"></div>
+                <h3
+                  class="
+                  bg-second-large
+                    section-title
+                    animated
+                    bounceInDown
+                  "
+                >
+                  road <span class="text-orange">map</span>
+                </h3>
+
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="boxed-img"><img src="./assets/images/roadmap/roadmap.png" alt="">
+              </div>
+              <div class="content-rm">
+                <div class="flex-row-one">
+                  <div class="flex-item">
+                    <div class="boxed-img">
+                      <img src="./assets/images/roadmap/item-q3-2021.png" alt="">
+                    </div>
+                    <div class="content">
+                      <p class="text-bold">
+                        CONCEPT DEVELOPMENT
+                      </p>
+                      <p class="text-re">
+                        WHITEPAPER, GAME CONCEP
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="boxed-img">
+                      <img src="./assets/images/roadmap/item-q1-2022.png" alt="">
+                    </div>
+                    <div class="content">
+                      <p class="text-bold">
+                        CONCEPT DEVELOPMENT
+                      </p>
+                      <p class="text-re">
+                        WHITEPAPER, GAME CONCEP
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex-item">
+                    <div class="boxed-img">
+                      <img src="./assets/images/roadmap/item-q3-2022.png" alt="">
+                    </div>
+                    <div class="content">
+                      <p class="text-bold">
+                        CONCEPT DEVELOPMENT
+                      </p>
+                      <p class="text-re">
+                        WHITEPAPER, GAME CONCEP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-row-two">
+                  <div class="flex-item">
+                    <div class="boxed-img">
+                      <img src="./assets/images/roadmap/item-q4-2021.png" alt="">
+                    </div>
+                    <div class="content">
+                      <p class="text-bold">
+                        CONCEPT DEVELOPMENT
+                      </p>
+                      <p class="text-re">
+                        WHITEPAPER, GAME CONCEP
+                      </p>
+                    </div>
+                  </div>      <div class="flex-item">
+                    <div class="boxed-img">
+                      <img src="./assets/images/roadmap/item-q2-2022.png" alt="">
+                    </div>
+                    <div class="content">
+                      <p class="text-bold">
+                        CONCEPT DEVELOPMENT
+                      </p>
+                      <p class="text-re">
+                        WHITEPAPER, GAME CONCEP
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- End item one-->
-              <div class="direction">
-                <i class="fas fa-angle-double-down"></i>
-              </div>
-              <div class="wrap-outer">
-                <!--item - two-->
-                <div class="wrap-inner">
-                  <div class="story-chap">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6 roadmap-content">
-                          <div class="content-chap">
-                            <div class="content-heading">
-                              <span class="title">I buy game</span>
-                              <span class="date">16/7/2022</span>
-                            </div>
-                            <div class="content">
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Voluptatibus, velit vero commodi
-                              nemo provident porro unde voluptates labore
-                              repellendus itaque.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 roadmap-img">
-                          <div class="boxed-thumb">
-                            <img
-                              src="./assets/images/roadmap/story-2-570x252.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End item two-->
-              <div class="direction">
-                <i class="fas fa-angle-double-down"></i>
-              </div>
-              <div class="wrap-outer">
-                <!--item - three-->
-                <div class="wrap-inner">
-                  <div class="story-chap">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6 roadmap-img">
-                          <div class="boxed-thumb">
-                            <img
-                              src="./assets/images/roadmap/story-3-570x252.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-6 roadmap-content">
-                          <div class="content-chap">
-                            <div class="content-heading">
-                              <span class="title">I buy game</span>
-                              <span class="date">16/7/2022</span>
-                            </div>
-                            <div class="content">
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Voluptatibus, velit vero commodi
-                              nemo provident porro unde voluptates labore
-                              repellendus itaque.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End item three-->
-              <div class="direction">
-                <i class="fas fa-angle-double-down"></i>
-              </div>
-              <div class="wrap-outer">
-                <!--item - four-->
-                <div class="wrap-inner">
-                  <div class="story-chap">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-6 roadmap-content">
-                          <div class="content-chap">
-                            <div class="content-heading">
-                              <span class="title">I buy game</span>
-                              <span class="date">16/7/2022</span>
-                            </div>
-                            <div class="content">
-                              Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Voluptatibus, velit vero commodi
-                              nemo provident porro unde voluptates labore
-                              repellendus itaque.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 roadmap-img">
-                          <div class="boxed-thumb">
-                            <img
-                              src="./assets/images/roadmap/story-4-570x252.jpg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End item four-->
             </div>
           </div>
         </div>
       </section>
       <!-- End section Roadmap -->
-      <!-- section character -->
-      <section id="character" class="character">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="section-heading">
-                <div class="section-cap"></div>
-                <h3 class="section-title animated bounceInDown">
-                  CHOOSE YOUR character
-                </h3>
-                <div class="boxed-img">
-                  <img
-                    src="./assets/images/line-heading-section.png"
-                    alt=""
-                    class="section-line"
-                  />
-                </div>
-                <p class="section-desc">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremque magni provident ea nemo similique? Doloremque earum
-                  suscipit necessitatibus corrupti nesciunt.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row wrap-content">
-            <div class="col-lg-10">
-              <div class="character-active animated bounceInLeft">
-                <div class="character-item">
-                  <div class="member-img">
-                    <img src="./assets/images/character/team-01.jpg" alt="" />
-                  </div>
-                  <div class="character-content">
-                    <div class="content-top">
-                      <h4 class="name">Michael De Santa</h4>
-                      <div class="info">
-                        <ul>
-                          <li><span>Category :</span>Virtual Game</li>
-                          <li><span>Model :</span>Compete 100 players</li>
-                          <li>
-                            <span>Controller :</span>Playstation 5 , Xbox , PS4
-                          </li>
-                        </ul>
-                      </div>
-
-                      <ul class="tab-skill">
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack2.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img src="./assets/images/skill/shell.png" alt="" />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <a href="#!" class="btn btn--primary">Play now</a>
-                  </div>
-                </div>
-                <div class="character-item">
-                  <div class="member-img">
-                    <img src="./assets/images/character/team-02.jpg" alt="" />
-                  </div>
-                  <div class="character-content">
-                    <div class="content-top">
-                      <h4 class="name">Franklin Clinton</h4>
-                      <div class="info">
-                        <ul>
-                          <li><span>Category :</span>Virtual Game</li>
-                          <li><span>Model :</span>Compete 100 players</li>
-                          <li>
-                            <span>Controller :</span>Playstation 5 , Xbox , PS4
-                          </li>
-                        </ul>
-                      </div>
-
-                      <ul class="tab-skill">
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack2.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img src="./assets/images/skill/shell.png" alt="" />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <a href="#!" class="btn btn--primary">Play now</a>
-                  </div>
-                </div>
-                <div class="character-item">
-                  <div class="member-img">
-                    <img src="./assets/images/character/team-03.jpg" alt="" />
-                  </div>
-                  <div class="character-content">
-                    <div class="content-top">
-                      <h4 class="name">Trevor Philips</h4>
-                      <div class="info">
-                        <ul>
-                          <li><span>Category :</span>Virtual Game</li>
-                          <li><span>Model :</span>Compete 100 players</li>
-                          <li>
-                            <span>Controller :</span>Playstation 5 , Xbox , PS4
-                          </li>
-                        </ul>
-                      </div>
-
-                      <ul class="tab-skill">
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack2.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img src="./assets/images/skill/shell.png" alt="" />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <a href="#!" class="btn btn--primary">Play now</a>
-                  </div>
-                </div>
-                <div class="character-item">
-                  <div class="member-img">
-                    <img src="./assets/images/character/team-04.jpg" alt="" />
-                  </div>
-                  <div class="character-content">
-                    <div class="content-top">
-                      <h4 class="name">Call <span>of Duty</span></h4>
-                      <div class="info">
-                        <ul>
-                          <li><span>Category :</span>Virtual Game</li>
-                          <li><span>Model :</span>Compete 100 players</li>
-                          <li>
-                            <span>Controller :</span>Playstation 5 , Xbox , PS4
-                          </li>
-                        </ul>
-                      </div>
-
-                      <ul class="tab-skill">
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img
-                              src="./assets/images/skill/skill_attack2.png"
-                              alt=""
-                            />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                        <li>
-                          <div class="boxed-img">
-                            <img src="./assets/images/skill/shell.png" alt="" />
-                          </div>
-                          <p class="desc-skill">
-                            Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <a href="#!" class="btn btn--primary">Play now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <div class="character-nav animated bounceInRight">
-                <div class="character-nav-item">
-                  <img
-                    src="./assets/images/c1941a1e92370db0939d9c32d1617f9d.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="character-nav-item">
-                  <img src="./assets/images/casino.jpg" alt="" />
-                </div>
-                <div class="character-nav-item">
-                  <img
-                    src="./assets/images/games-like-watch-dogs-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="character-nav-item">
-                  <img
-                    src="./assets/images/Grand-Theft-Auto-San-Andreas-está-grátis-por-tempo-limitado.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End section character -->
-      <!-- section teams -->
+         <!-- section teams -->
       <section id="teams" class="teams">
+        
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 text-center">
               <div class="section-heading">
-                <h3 class="section-title">Teams</h3>
-                <p class="section-desc">
-                  Unleash your revenge upon mankind as you turn and look towards
-                  the human cities, only to see a great pillar of flame hit
-                  their cathedrals, the ensuing shockwave and flamewall erasing
-                  all signs of their kingdoms' existence.
-                </p>
+                <h3 class="section-title bg-second-large">OUR <span class="text-orange">Teams</span></h3>
               </div>
             </div>
           </div>
           <!-- end row heading-->
           <div class="row">
             <div class="col-lg-12">
-              <div class="team-grid">
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-01.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+             <div class="team-slider">
+               <div class="team text-center">
+                <div class="boxed-img">
+                  <img src="./assets/images/teams/team-02.jpg" alt="">
+                </div>
+                <div class="info-team">
+                  <div class="content-top">
+                    <p class="text-orange name">dewei tsou</p>
+                    <p class="text-white">founder coo</p>
                   </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
+                  <div class="content-bottom">
+                    <p>"MAURIS TEMPUS ENIM LOREM, NEC EGESTAS EST
+                      FRINGILLA UT. QUISQUE IACULIS DUI EGESTAS MI
+                      BLANDIT VIVERRA. NULLA LUCTUS VULPUTA</p>
                   </div>
                 </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-05.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+               </div> <!--End team-->
+               <div class="team text-center">
+                <div class="boxed-img">
+                  <img src="./assets/images/teams/team-03.jpg" alt="">
+                </div>
+                <div class="info-team">
+                  <div class="content-top">
+                    <p class="text-orange name">dewei tsou</p>
+                    <p class="text-white">founder coo</p>
                   </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
+                  <div class="content-bottom">
+                    <p>"MAURIS TEMPUS ENIM LOREM, NEC EGESTAS EST
+                      FRINGILLA UT. QUISQUE IACULIS DUI EGESTAS MI
+                      BLANDIT VIVERRA. NULLA LUCTUS VULPUTA</p>
                   </div>
                 </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-02.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+               </div> <!--End team-->
+               <div class="team text-center">
+                <div class="boxed-img">
+                  <img src="./assets/images/teams/team-04.jpg" alt="">
+                </div>
+                <div class="info-team">
+                  <div class="content-top">
+                    <p class="text-orange name">dewei tsou</p>
+                    <p class="text-white">founder coo</p>
                   </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
+                  <div class="content-bottom">
+                    <p>"MAURIS TEMPUS ENIM LOREM, NEC EGESTAS EST
+                      FRINGILLA UT. QUISQUE IACULIS DUI EGESTAS MI
+                      BLANDIT VIVERRA. NULLA LUCTUS VULPUTA</p>
                   </div>
                 </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-06.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+               </div> <!--End team-->
+               <div class="team text-center">
+                <div class="boxed-img">
+                  <img src="./assets/images/teams/team-05.jpg" alt="">
+                </div>
+                <div class="info-team">
+                  <div class="content-top">
+                    <p class="text-orange name">dewei tsou</p>
+                    <p class="text-white">founder coo</p>
                   </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
+                  <div class="content-bottom">
+                    <p>"MAURIS TEMPUS ENIM LOREM, NEC EGESTAS EST
+                      FRINGILLA UT. QUISQUE IACULIS DUI EGESTAS MI
+                      BLANDIT VIVERRA. NULLA LUCTUS VULPUTA</p>
                   </div>
                 </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-03.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
+               </div> <!--End team-->
+               <div class="team text-center">
+                <div class="boxed-img">
+                  <img src="./assets/images/teams/team-06.jpg" alt="">
+                </div>
+                <div class="info-team">
+                  <div class="content-top">
+                    <p class="text-orange name">dewei tsou</p>
+                    <p class="text-white">founder coo</p>
                   </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
+                  <div class="content-bottom">
+                    <p>"MAURIS TEMPUS ENIM LOREM, NEC EGESTAS EST
+                      FRINGILLA UT. QUISQUE IACULIS DUI EGESTAS MI
+                      BLANDIT VIVERRA. NULLA LUCTUS VULPUTA</p>
                   </div>
                 </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-07.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
-                  </div>
-                </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-04.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
-                  </div>
-                </div>
-                <div class="memb-item">
-                  <div class="box-img-team">
-                    <div class="box-border-animate">
-                      <div class="hover-bg">
-                        <div class="hover-text">
-                          <p class="lang" data-tag="text-memb20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam, iure? Doloremque, molestias? Totam
-                            consectetur temporibus, expedita dignissimos autem
-                            nam nemo possimus aliquid error saepe deserunt
-                            dolorum asperiores officiis sequi quo corrupti!
-                            Molestiae maiores autem quibusdam veniam mollitia at
-                            omnis minus?
-                          </p>
-                          <ul class="link-info character-socials">
-                            <li>
-                              <a
-                                class="linkedin"
-                                target="_blank"
-                                href="http://www.linkedin.com"
-                                title="LinkedIn"
-                                tabindex="0"
-                              >
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>Linkedin</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <img
-                          src="./assets/images/teams/team-08.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="info-memb">
-                    <p class="name lang" data-tag="name-memb20">
-                      Grand Theft Auto V
-                    </p>
-                    <p class="info lang" data-tag="info-memb20">Founder</p>
-                  </div>
-                </div>
-              </div>
+               </div> <!--End team-->
+             </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End section teams -->
     <footer class="footer">
+      <div class="bg-bottom-section"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12 col-md-4 col-sm-12 col-xs-12 text-center block-large-footer">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-center block-large-footer">
             <a href="#" class="footer-brand">
               <div class="boxed-img">
-                <img src="./assets/images/osimi-logo-ver1.png" alt="osimi game">
+                <img src="./assets/images/logo.png" alt="osimi city game">
               </div>
             </a>
             <div class="block-footer-info">
-              <p class="footer-slogan">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
               <div class="info-company">
                 <p class="intro-footer"> DRAGON SB is a product of DRAGON SB PTE.LTD. </p>
                 <p class="intro-footer2">Registration No. 202138052D</p>
@@ -1273,18 +748,18 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
+          <div class="col-lg-2 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
             <h4 class="title-list-footer">About Us</h4>
             <ul class="footer-menu">
               <li class="menu-item"><a href="#!"><span>download</span></a></li>
               <li class="menu-item"><a href="#features"><span>features</span></a></li>
               <li class="menu-item"><a href="#token"><span>tokennomic</span></a></li>
-              <li class="menu-item"><a href="#teams"><span>teams</span></a></li>
+              <li class="menu-item"><a href="#teams"><span>team</span></a></li>
               <li class="menu-item"><a href="#!"><span>coinmarketcap</span></a></li>
               <li class="menu-item"><a href="#!"><span>contract audit</span></a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
             <h4 class="title-list-footer">Link socials</h4>
             <ul class="menu-socials">
 							<li class="menu-item"><a href="https://www.facebook.com/Dragon-SB-109444668205356" target="_blank"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
@@ -1336,7 +811,7 @@
 							</li>
 						</ul>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-item text-center">
             <h4 class="title-list-footer">document</h4>
             <ul class="doc-menu">
 							<li class="menu-item"><a href="./filepdf/DragonSB_Wp_En.pdf" target="_blank"><span>Whitepaper</span></a></li>
@@ -1355,7 +830,6 @@
     <div class="scroll-up">
       <a href="#header" class="page-scroll"><i class="fa fa-angle-up"></i></a>
     </div>
-
     <!--JS files Core-->
     <script src="./assets/js/jquery.js"></script>
     <script

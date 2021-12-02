@@ -1,0 +1,24 @@
+.economics{
+    padding: 60px 0;
+    background-image: url(../images/bg-section/osimi-bg-normal.jpg);
+    background-repeat: repeat;
+    background-position:center ;
+    background-size: contain;
+    .grid-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 60px;
+        .grid-item{
+            .grid-content{
+                padding:  20px;
+                .title-item{
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+
+                }
+            }
+        }
+    }
+}

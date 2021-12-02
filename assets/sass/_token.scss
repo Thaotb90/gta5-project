@@ -1,7 +1,8 @@
 .token {
-  background-image: url(../images/bg-section/bg-section-token.jpg);
+  background-image: url(../images/bg-section/osimi-bg-normal.jpg);
   position: relative;
   z-index: 1;
+  padding: 0;
   .container {
     position: relative;
     z-index: 3;
@@ -27,14 +28,14 @@
     column-gap: 30px;
   }
   table.table-metric {
-    border-spacing: 3px;
+    border-spacing: 25px;
     border-collapse: separate;
   }
   table.table-metric thead {
     background: #77441c;
   }
   table.table-metric tr {
-    min-height: 50px;
+    min-height: 45px;
   }
   table.table-metric thead th {
     color: white;
@@ -48,7 +49,7 @@
     border-style: solid;
   }
   .token-info-content tbody tr {
-    height: 55px;
+    height: 45px;
   }
   .token-info-content tbody tr td {
     padding: 0 30px;
@@ -57,12 +58,18 @@
     text-align: center;
   }
   .token-info-content tbody tr td {
-    padding: 10px;
+    font-family: "AquireRegular";
+    padding: 10px 30px;
     color: white;
-    background-color: rgba(124, 23, 23, 0.45);
+    background-color: #171718;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px;
+  
   }
   .token-info-content tfoot tr {
-    background: #b97d0e;
+    background: #1D1D1E;
+
   }
   .table-metric tfoot tr th:not(last-child) {
     text-align: center;
@@ -70,52 +77,17 @@
   .token-info-content tfoot tr th {
     padding: 15px 0;
     color: white;
+    border-radius: 10px;
   }
-  // token intruction
-  .token-intruction {
-  }
-  .intruction-item {
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    align-items: center;
-    gap: 25px;
-    position: relative;
-    top: 3px;
-    margin-bottom: 20px;
-  }
-  .intruction-item h5 {
-    color: white;
-    padding: 15px 0px;
-    border-radius: 0;
-    background: #e4a1018c;
-    width: 145px;
-    overflow: hidden;
-    text-align: center;
-    font-size: 16px;
-    border: 2px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient( 
-180deg, #faea75, #c07205);
+}
 
-  }
-  .intruction-item span {
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
-    flex: 1 0;
-  }
+.token-table {
+  padding: 50px;
+  background: #232323;
+  border-radius: 25px;
+  box-shadow: 0 0 72px -15px $primary-color;
 }
-.token:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.712);
-  position: absolute;
-  z-index: 2;
-}
+
 
 @media screen and (max-width: 991px) {
   .token{
