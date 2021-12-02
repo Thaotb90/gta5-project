@@ -88,8 +88,8 @@ $('.character-list').slick({
     autoPlay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/images/character/chevron-back-outline.svg'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='../assets/images/character/chevron-forward-outline.svg'>"
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/chevron-forward-outline.svg'>"
   });
 $('.team-slider').slick({
     dots: false,
@@ -98,6 +98,6 @@ $('.team-slider').slick({
     autoPlay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow:"<img class='a-left control-c prev slick-prev' src='../assets/images/character/chevron-back-outline.svg'>",
-    nextArrow:"<img class='a-right control-c next slick-next' src='../assets/images/character/chevron-forward-outline.svg'>"
+    prevArrow:"<img class='a-left control-c prev slick-prev' src='./assets/images/character/chevron-back-outline.svg'>",
+    nextArrow:"<img class='a-right control-c next slick-next' src='./assets/images/character/chevron-forward-outline.svg'>"
   });
