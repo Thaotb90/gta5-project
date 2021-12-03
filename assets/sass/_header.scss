@@ -2,10 +2,6 @@
   box-shadow: 3.5px 6.1px 30px rgb(0 0 0 / 57%);
   &-main {
     background: #000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
     &-inner {
       padding: 0 15px;
       width: 100%;
@@ -35,7 +31,7 @@
         justify-content: center;
         .nav-item {
           .nav-link {
-            padding: 12px 30px;
+            padding: 5px 25px;
             color: white;
             transition: 0.3s all;
             position: relative;
@@ -79,6 +75,7 @@
     }
   }
   .navbar {
+    box-shadow: 3px 6px 10px rgb(127 127 127 / 50%);
   }
   #navbarSupportedContent {
     height: 100%;
@@ -144,11 +141,53 @@ header .nav-right {
     }
   }
 }
+#navbarSupportedContent{
+  transition: 0.4s ease-in-out;
+  display: none;
+}
+#navbarSupportedContent.show {
+  display: block;
+  transition: 0.4s ease-in-out;
+  margin-top: 12px;
+}
+.header .nav-right{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .btn--playnow{
+    
+  }
+  .switch-lang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    .boxed-img{
+      img{
+        max-width: 60px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    .group-lang{
+      color: #E5650E;
+      font-family: $primary-font;
+      font-size: 16px;
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+    }
+  }
+}
 
 @media screen and (max-width: 1280px) {
 
   .header-main-inner .navbar-nav .nav-item .nav-link {
     padding: 6px 15px;
+}
+.header-main-inner .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
 }
 
 }
@@ -159,7 +198,7 @@ header .nav-right {
 }
 @media screen and (max-width: 992px) {
   nav.fixed-top{
-    height: 100px;
+    height: 75px;
   }
   .header-main-inner{
     display: block;
@@ -167,18 +206,20 @@ header .nav-right {
     background: transparent;
     padding: 10px 0px;
   }
+
 .nav-right{
-  display: none;
+  display: none !important;
 }
   .header nav button.navbar-toggler {
     position: absolute;
-    top: 12px;
+    top: 50%;
     right: 0;
     z-index: 999;
     border: none;
+    transform: translateY(-50%);
 }
 div#navbarSupportedContent {
-  background-image: url(../images/bg-section/landing-rev-slider-img-2.jpg);
+  background-image: url(../images/bg-section/bg-section-token.jpg);
   padding: 30px 0;
   position: relative;
   top: 0;
@@ -196,96 +237,4 @@ div#navbarSupportedContent {
 li.nav-item{
   padding: 10px 0;
 }
-}
-
-#navbarSupportedContent{
-  transition: 0.4s ease-in-out;
-  display: none;
-}
-#navbarSupportedContent.show {
-  display: block;
-  transition: 0.4s ease-in-out;
-}
-.header .nav-right{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  .btn--playnow{
-    
-  }
-  .switch-lang{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    .boxed-img{
-      img{
-        max-width: 80px;
-        height: auto;
-        object-fit: contain;
-      }
-    }
-    .group-lang{
-      color: #E5650E;
-      font-family: $primary-font;
-      font-size: 18px;
-      text-transform: uppercase;
-      background: transparent;
-      border: none;
-    }
-  }
-}
-
-
-/* item list */
-
-.b{
-  display: none;
-  width: 100%;
-  max-width: 350px;
-  box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 5px;
-  
-}
-
-.open{
-  display: show !important;
-}
-
-.btn-select{
-  margin-top: 10px;
-  width: 100%;
-  max-width: 350px;
-  height: 34px;
-  border-radius: 5px;
-  background-color: #fff;
-  border: 1px solid #ccc;
- 
-}
-.btn-select li{
-  list-style: none;
-  float: left;
-  padding-bottom: 0px;
-}
-
-.btn-select:hover li{
-  margin-left: 0px;
-}
-
-.btn-select:hover{
-  background-color: #F4F3F3;
-  border: 1px solid transparent;
-  box-shadow: inset 0 0px 0px 1px #ccc;
-  
-  
-}
-
-.btn-select:focus{
-   outline:none;
-}
-
-.lang-select{
-  margin-left: 50px;
 }

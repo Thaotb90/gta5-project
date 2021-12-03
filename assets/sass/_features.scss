@@ -1,9 +1,9 @@
 .features {
   background-image: url(../images/bg-section/osimi-bg-normal.jpg);
-  background-repeat:repeat-y;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   padding: 60px 0;
+  background-repeat: repeat;
   .text-orange{
     color: $primary-color;
   }
@@ -29,20 +29,21 @@
       }
       .content-item:hover {
         transform: scale(1.02);
-        filter: drop-shadow(0 0 5px $primary-color);
+        filter: drop-shadow(0 0 20px $primary-color);
       }
       .content-item:hover .bg-overlay {
         opacity: 0.5;
       }
       .content-text{
-        margin: 20px;
+        padding: 20px 10px;
         text-align: left;
+        transition: 0.3s all;
         .title-item{
           font-size: 22px;
           color: $primary-color;
           margin-bottom: 20px;
           text-transform: uppercase;
-          font-weight: 28px;
+          line-height: 28px;
         }
         .desc-item{
           text-transform: uppercase;
@@ -52,17 +53,42 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px) {
+
+  .features .grid-box .feature-item .content-text .title-item {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+.features .grid-box .feature-item .content-text .desc-item {
+  font-size: 14px;
+}
+}
 @media screen and (max-width: 1023px) {
 
   .features .grid-box {
     grid-gap: 24px;
 }
 }
+@media screen and (max-width: 991px) {
+
+  .features .grid-box {
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+}
+}
 @media screen and (max-width: 769px) {
 
   .features .grid-box {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 24px;
+    text-align: center;
+}
+.features .grid-box .feature-item {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
 }
 }
 @media screen and (max-width: 520px) {

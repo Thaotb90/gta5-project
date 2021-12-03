@@ -45,6 +45,7 @@
     color: white;
     padding: 10px 10px;
     font-size: 18px;
+    line-height: 20px;
     font-weight: normal;
     text-align: center;
     border-image-slice: 1;
@@ -99,7 +100,10 @@
       margin-bottom: 50px;
     }
   }
-
+.token .chart-box{
+  max-width: 600px;
+  margin: auto;
+}
 }
 @media screen and (max-width: 769px) {
   .token .token-info-content {

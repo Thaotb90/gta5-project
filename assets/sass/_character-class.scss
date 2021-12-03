@@ -3,9 +3,11 @@
     .character-list{
         .list-item {
             position: relative;
+            height: 70vh;
             .boxed-img{
                 position: relative;
                 width: 100%;
+                height: 100%;
             }
             .boxed-img:after{
                 content: "";
@@ -19,10 +21,12 @@
             }
             .boxed-content{
                 position: absolute;
+                z-index: 12;
+                width: 100%;
+                height: auto;
                 top: 50%;
-                left: 40%;
-                transform: translate(-50%, -50%);
-               z-index: 12;
+                left: 111px;
+                transform: translateY(-50%);
                 .title-character{
                     font-size: 60px;
                     margin-bottom: 50px;
@@ -30,6 +34,8 @@
                     background: #ffffff4f;
                     padding: 0 5px;
                     position: relative;
+                    display: inline-block;
+                    transition: 0.3s all;
                 }
                 .title-character:before{
                     content: "";
@@ -75,21 +81,27 @@
 
 
 .slick-slider img.slick-arrow {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    filter: invert(0.8);
-}
+    padding: 5px;
+    background: $primary-color;
+    transition: 0.3s all;
+  }
+  .slick-slider img.slick-arrow:hover {
+      box-shadow: 0 0 20px $primary-color;
+  }
 img.a-right.control-c.next.slick-next.slick-arrow {
     right: 0;
-    filter: invert(0.5);
+    border-radius: 10px 0 0 10px;
+    
 }
 img.a-left.control-c.prev.slick-prev.slick-arrow {
     left: 0;
-    filter: invert(0.5);
+    border-radius: 0 10px 10px 0;
 }
 .class-character .character-list .list-item:after {
     content: "";
@@ -99,3 +111,107 @@ img.a-left.control-c.prev.slick-prev.slick-arrow {
     bottom: 0;
     background: black;
 }
+.class-character .character-list .list-item .boxed-content .title-character:hover{
+    box-shadow: 0 0 10px red;
+}
+@media screen and (max-width: 1440px) {
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 1023px) {
+ 
+    .class-character .character-list .list-item .boxed-content .desc-character{
+        font-size: 18px;
+        p{
+            margin-bottom:10px;
+        }
+      }
+      .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 40px;
+    }
+    .boxed-content .btn-second-small{
+        margin: 25px 0;
+        font-size: 20px;
+        padding: 0 40px;
+        height: 55px;
+    }
+    .btn-second-small:before {
+        box-shadow: 0 65px 0 0 white;
+    }
+    .btn-second-small:after {
+        box-shadow: 0 65px 0 0 white;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 35px;
+    }
+    .class-character .character-list .list-item .boxed-content {
+        left: 70px;
+    }
+    .btn-second-small:before {
+        box-shadow: 0 65px 0 0 white;
+    }
+    .btn-second-small:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        top: -10px;
+        left: -10px;
+        box-shadow: 0 60px 0 0 white;
+        transition: 0.2s all;
+    }
+    .btn-second-small:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        top: -10px;
+        right: -10px;
+        box-shadow: 0 60px 0 0 white;
+        transition: 0.2s all;
+    }
+    .btn-second-small:hover:before, .btn-second-small:hover:after {
+        background: red;
+        box-shadow: 0 60px 0 0 red;
+        border-radius: 10rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    .class-character .character-list .list-item .boxed-content {
+        left: 45px;
+    }
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 26px;
+    }
+    .class-character .character-list .list-item .boxed-content .desc-character {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .class-character .character-list .list-item .boxed-content {
+        left: 25px;
+    }
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    .class-character .character-list .list-item .boxed-content .title-character {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+

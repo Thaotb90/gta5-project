@@ -5,3 +5,58 @@
     background-position: cener;
     padding-bottom: 60px;
 }
+.token .token-info-content tbody tr td:hover {
+    background-color: lightgray;
+    color: black;
+}
+@media screen and (max-width: 991px) {
+    .token-table {
+        padding: 10px;
+    }
+    .token .token-info-content tbody tr td {
+        padding: 10px;
+
+}
+.token table.table-metric {
+    border-spacing: 15px;
+    border-collapse: separate;
+}
+}
+@media screen and (max-width: 580px){
+    .token table.table-metric {
+        border-spacing: 10px;
+        border-collapse: separate;
+    }
+    .token-table {
+        padding: 0;
+        background: transparent;
+        border-radius: 5px;
+        box-shadow: 0 0 72px -15px #e5650e;
+    }
+    .token .token-info-content tbody tr td {
+        padding: 5px;
+        line-height: 1.2;
+        border-radius: 5px;
+    }
+    .token .token-info-content tfoot tr th {
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width:375px){
+    .token .token-info-content tbody tr td {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .token table.table-metric thead th {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .token .token-info-content tfoot tr th {
+        padding: 10px 0;
+        color: white;
+        font-size: 12px;
+    }
+    section#roadmap {
+        padding-top: 0;
+    }
+}
